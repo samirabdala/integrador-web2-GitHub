@@ -1,0 +1,224 @@
+body {
+    background-color: #f0f0f0;
+    padding: 0% 0% 5%;
+    font-family: 'Roboto', sans-serif
+}
+#conte{
+    padding: 3% 15% 5%;
+}
+html{
+    padding: 0%;
+}
+
+#gridd {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.productCard {
+    border: 1px solid #ccc;
+    padding: 30px 10px;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 100%;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.productCard:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.productCard #cat {
+    color: #a9a9aa;
+    margin-top: 2%;
+    font-size: 0.67rem;
+}
+
+.productCard h3 {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.productCard #precio {
+    font-weight: bold;
+    font-size: 110%;
+    color: #1a1a1a;
+    margin-top: auto; 
+}
+
+.productCard p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+.productCard #descrip {
+    padding: 3% 0% 0% 0%;
+}
+.productCard img {
+    max-width: 95%;
+    height: 300px;
+    object-fit: contain;
+    transition: transform 0.3s;
+    margin-bottom: 35px;
+}
+
+.productCard:hover img {
+    transform: scale(111%);
+}
+.productCard button .icon-wrapper {
+    margin-right: 5px; 
+}
+.productCard button {
+    background-color: #000000;
+    width: 100%;
+    font-weight: bold;
+    color: #ffffff;
+    border: none;
+    padding: 9px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.productCard button:hover {
+    background-color: #3b3a3a;
+}
+
+.productCard button:active {
+    transform: scale(0.95);
+}
+#header {
+   
+   
+    border-bottom:1.5px solid #5f5b5be8;
+    margin: -2% -2% 0% -2%;
+    position: static;
+    top: 0;
+    background-color: #000000;
+
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%; 
+    margin: 0 auto;
+    padding: 0% ;
+    flex-direction: row;
+
+}
+.header-content {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    width: 100%; 
+}
+h1 {
+    margin: 0 auto;
+    color: #e5ff00;
+    padding-top: 1%;
+    font-size: 5em; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#carri {
+    position: fixed; 
+    top: 2vw; 
+    right: 8%;
+    padding: 0.5vw;
+    z-index: 999; 
+}
+
+#carri span {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:bold ;
+    font-size: small;
+    color: #ffffff;
+    border-radius: 50%; 
+    padding: 0.1vw 0.3vw; 
+}
+
+.cart-icon {
+    z-index: -30;
+    color: #1a1a1a;
+    position: fixed;
+    right:7%;
+    top: 1%;
+    border: 1px solid rgba(48, 47, 47, 0.178);
+    margin-top: 1%;
+    background-color: #fcf7f7bd;
+    border-radius: 100% ;
+    padding: 0.2vw;
+    font-size: 1.2vw; 
+}
+.cart-icon:hover{
+    transform: scale(1.2);
+    text-shadow: 1px 1px 3px rgb(241, 245, 1);;
+
+}
+#tooltip {
+    position: absolute;
+    background-color: rgb(251, 255, 235);
+    border: 1px solid #ccc;
+    padding: 5px;
+    z-index: 1000;
+    display: none;
+    font-size: 13px;
+    max-width: 200px; 
+    white-space: pre-wrap; 
+  }
+  
+  
+.cartel {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    backdrop-filter: blur(5px)
+}
+
+.divMensaje {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#botX {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+footer{
+    background-color: #232323;
+    color: #e5ff00;
+    margin: 0% -2% -6% -1%;    text-decoration: none;
+    transition: color 0.3s; 
+}
+.footer-column ul li a {
+    color: #fff; 
+    text-decoration: none; 
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #fff;
+}
