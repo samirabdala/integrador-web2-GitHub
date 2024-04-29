@@ -198,9 +198,7 @@ document.addEventListener('click', function (event) {
     const input = prodCard.querySelector('.cantNum');
     const prodId = prodCard.id.split('_')[1];
     const pos = carro.findIndex(pr => pr.id === prodId);
-    if(carro.length-1 == 0){
-      emptyCartIcon.style.display = 'block';
-    }
+    
     console.log(carro.length)
     if (event.target.classList.contains('fa-plus')) {
       input.value = parseInt(input.value) + 1;
